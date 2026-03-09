@@ -16,7 +16,7 @@ setwd("C:/Users/00hcr/Documents/case_sicredi")
 
 #######################################################################################
 
-## Questao 1: ##
+## Hiato do produto ##
 
 #Carregando a serie do PIB trimestral
 df <- read_excel("pib_trimestral.xlsx")
@@ -128,7 +128,7 @@ abline(h = 0, col = "gray50", lwd = 2, lty = 2)
 
 #######################################################################################
 
-## Questao 2: ##
+## Modelo para taxa de câmbio (BRL/USD) ##
 
 library(rbcb)
 library(dplyr)
@@ -307,7 +307,7 @@ mean(fc_cambio[c(3,4,5)]) #previsao 1T26
 
 #######################################################################################
 
-## Questao 3: ##
+## Função de reação para o FED ##
 
 library(tidyverse)
 library(fredr)
@@ -414,4 +414,5 @@ stargazer(
 )
 
 #######################################################################################
+
 
